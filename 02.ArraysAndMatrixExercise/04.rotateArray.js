@@ -1,6 +1,6 @@
 function solve(arr, num){
 
-    for(let i = 0; i < num; i++){
+    for(let i = 0; i < num % arr.length; i++){
         const number = arr.pop();
         arr.unshift(number);
     }
@@ -12,5 +12,5 @@ solve(['1',
 '2', 
 '3', 
 '4'], 
-2
+21635
 )
