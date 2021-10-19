@@ -7,6 +7,9 @@ const myPerson = {
 
 myPerson.age = 26;
 
+console.log(myPerson['age']);
+console.log(myPerson.age);
+
 console.log(myPerson);
 
 const propName = 'name';
