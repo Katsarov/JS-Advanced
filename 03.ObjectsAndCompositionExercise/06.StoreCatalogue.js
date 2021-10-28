@@ -2,8 +2,8 @@ function solve6(arr){
     const productCatalogue = {};
 
     arr.forEach((el) => {
-        let [productName, price] = el.split(' : ');
-        price = Number(price);
+        let [productName, productPrice] = el.split(' : ');
+        productPrice = Number(productPrice);
 
         // Изваждаме си първата буква от името на продукта за да създадем групата
         const index = productName[0];
@@ -15,7 +15,7 @@ function solve6(arr){
 
         // След като си го имаме този обект, сега трябва да пъхнем в неги името и цената
         // Към дадения индекс (в случая А) като пропърти добавяме Anti-Bug Spray, и като велю добавяме цената
-        productCatalogue[index][productName] = price;
+        productCatalogue[index][productName] = productPrice;
     })
 
     // Сега трябва да си направим първоначално сортиране на буквите в групите, т.е. ще сортираме ключовете
