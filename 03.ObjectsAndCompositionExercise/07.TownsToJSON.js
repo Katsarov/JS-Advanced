@@ -22,8 +22,8 @@ function solve7(arr){
     }
     
     //return JSON.stringify(result);
-    //console.log(JSON.stringify(result));
-    console.log(JSON.stringify(result,null, 2));
+    console.log(JSON.stringify(result));
+    //console.log(JSON.stringify(result,null, 2));
 }
 
 solve7(['| Town | Latitude | Longitude |',
