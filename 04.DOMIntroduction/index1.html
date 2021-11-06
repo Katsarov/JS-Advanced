@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo2</title>
+</head>
+<body>
+    <h1>Hello, %insert name here%!</h1>
+
+    <script>
+        function edit(element, match, replacer) {
+            const text = element.textContent;
+            element.textContent = text.replaceAll(match, replacer);
+        }
+    </script>
+</body>
+</html>

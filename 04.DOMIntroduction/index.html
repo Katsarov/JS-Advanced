@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <h1 id="title">DOM Introduction</h1>
+    <button onclick="alert('Code from event handler')">Click me</button>
+    <ul>
+        <li class="row">DOM Methods example</li>
+        <li class="row">DOM Properties example</li>
+    </ul>
+    <input>
+    <script>
+        function edit(element, match, replacer) {
+            const text = element.textContent;
+            // Четем text.Content, променяме го в text.replaceAll(match, replacer) и го подаваме на новата стойност element.textContent
+            element.textContent = text.replaceAll(match, replacer);
+        }
+    </script>
+</body>
+</html>
