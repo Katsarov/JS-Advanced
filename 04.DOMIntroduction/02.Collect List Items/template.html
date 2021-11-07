@@ -13,7 +13,21 @@
 <br>
 <button onclick="extractText()">Extract Text</button>
 <script>
-    
+    function extractText() {
+        // вземаме си референция на items като си правим един масив с елементите 
+        const items = document.getElementById('items').children;
+
+        // правим си един празен масив, в който ще добавяме съдържанието на текста след всяка итерация
+        const result = [];
+
+        // с един for цикъл обховдаме масива и вадим съдърванието на цсеки от елементите
+        for (const item of Array.from(items)) {
+            result.push(item.textContent);
+        }
+
+        // и накрая трябва да хванем textContent-a на result и да го отпечатаме всеки на нов ред
+        document.getElementById('result').value = result.join('\n');
+    }
 </script>
 </body>
 </html>
